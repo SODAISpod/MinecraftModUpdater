@@ -1,0 +1,1 @@
+\AppData\Local\Programs\Python\Python310\Scripts\pyinstaller.exe -D .\minecraftUpdater.py -i'.\mcupdaterIcon.ico' -c
