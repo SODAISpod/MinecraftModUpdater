@@ -1,5 +1,5 @@
 # MinecraftModUpdater
-Automatically download mods packet from specified url, then use hash to update or delete the mods in the ./mods folder.
+Automatically download mods pack from specified URLs, then use hash to update or delete the mods in the ./mods folder.
 # URLs
 `manifestURL="path to minifest"  `  
 It will download mod zip package specified in minifest from same path with minifest doc.
