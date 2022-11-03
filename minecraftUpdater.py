@@ -16,7 +16,7 @@ try:
                 hash_md5.update(chunk)
         return hash_md5.hexdigest()
     tempFolder="mcUpdaterTemp"
-    manifestURL='UUURRRLLL' #Replace whit your own address
+    manifestURL='https://github.com/XXX/XXX/raw/main/manifest' #Replace whit your own address
     manifestU=urlopen(manifestURL)
     print("正在取得模組包裹名稱")#fetching mod package name/
     manifest=manifestU.read().decode('utf-8')
@@ -35,11 +35,11 @@ try:
 
     print(f"準備下載模組包：{package}")    #prepare to download {package}
     packageFolder=os.path.join(tempFolder,f"{package}") 
-    urlretrieve(f"https://raw.githubusercontent.com/ncuouo/mcPatch/main/{package}.zip",f"{packageFolder}.zip")
+    urlretrieve(f"https://raw.githubusercontent.com/XX/mXXXh/main/{package}.zip",f"{packageFolder}.zip")
 
 
-    # if not os.path.exists(packageFolder):
-    #     os.makedirs(packageFolder)
+    if not os.path.exists(packageFolder):
+        os.makedirs(packageFolder)
     print("正在解壓縮") #uncompressing
     with zipfile.ZipFile(f"{packageFolder}.zip", 'r') as zip_ref:
         zip_ref.extractall(tempFolder)
